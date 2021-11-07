@@ -4,9 +4,11 @@ defmodule Ballon.Accounts do
   """
 
   import Ecto.Query, warn: false
-  alias Ballon.Repo
 
-  alias Ballon.Accounts.{User, UserToken, UserNotifier}
+  alias Ballon.Accounts.User
+  alias Ballon.Accounts.UserNotifier
+  alias Ballon.Accounts.UserToken
+  alias Ballon.Repo
 
   ## Database getters
 
