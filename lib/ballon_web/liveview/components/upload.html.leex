@@ -1,0 +1,5 @@
+<%= f = form_for @uploads, "#", id: "upload", phx_target: @myself, phx_submit: "save" %>
+    <%= label f, :files %>
+    <%= live_file_input @uploads.files %>
+    <%= button "Upload", phx_disable_with: "Uploading..." %>
+</form>
